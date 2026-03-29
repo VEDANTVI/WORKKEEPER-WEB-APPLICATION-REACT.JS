@@ -1,0 +1,96 @@
+/* ═══════════════════════════════════════════════════════
+   COMPONENT LAYER — Reusable class definitions
+   Uses Tailwind @apply for consistency
+   ═══════════════════════════════════════════════════════ */
+
+/* ── Page Header ───────────────────────────────────── */
+.page-header {
+  @apply mb-6;
+}
+.page-header h2 {
+  @apply text-xl font-bold text-slate-800;
+}
+.page-header p {
+  @apply text-sm text-slate-500 mt-1;
+}
+
+/* ── Card ──────────────────────────────────────────── */
+.card {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-100;
+}
+.card-padded {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-100 p-5;
+}
+.card-hover {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-100 p-5
+         hover:shadow-md transition-shadow duration-300;
+}
+
+/* ── Table ─────────────────────────────────────────── */
+.table-wrapper {
+  @apply bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden;
+}
+.table-header {
+  @apply px-5 py-4 border-b border-slate-100 flex items-center justify-between;
+}
+.table-header h3 {
+  @apply text-sm font-semibold text-slate-700;
+}
+.table-header span {
+  @apply text-xs text-slate-400;
+}
+
+/* ── Form Controls ─────────────────────────────────── */
+.form-label {
+  @apply block text-xs font-medium text-slate-500 mb-1;
+}
+.form-input {
+  @apply w-full px-3 py-2 border border-slate-200 rounded-lg text-sm
+         text-slate-700 placeholder:text-slate-400
+         focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400
+         bg-white transition-colors;
+}
+.form-select {
+  @apply w-full px-3 py-2 border border-slate-200 rounded-lg text-sm
+         text-slate-700 bg-white
+         focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400
+         transition-colors;
+}
+.form-textarea {
+  @apply w-full px-3 py-2 border border-slate-200 rounded-lg text-sm
+         text-slate-700 placeholder:text-slate-400
+         focus:outline-none focus:ring-2 focus:ring-blue-500/30 focus:border-blue-400
+         resize-none bg-white transition-colors;
+}
+
+/* Auth form inputs (dark glass theme) */
+.form-input-dark {
+  @apply w-full px-4 py-2.5 bg-white/10 border border-white/20
+         rounded-xl text-white placeholder:text-white/40 text-sm
+         focus:outline-none focus:ring-2 focus:ring-blue-400/50 focus:border-blue-400/50
+         transition-colors;
+}
+
+/* ── Badges / Status Pills ─────────────────────────── */
+.badge {
+  @apply px-2.5 py-0.5 rounded-full text-xs font-semibold capitalize inline-flex items-center;
+}
+.badge-blue    { @apply bg-blue-50 text-blue-600; }
+.badge-green   { @apply bg-emerald-50 text-emerald-600; }
+.badge-amber   { @apply bg-amber-50 text-amber-600; }
+.badge-red     { @apply bg-red-50 text-red-600; }
+.badge-purple  { @apply bg-purple-50 text-purple-600; }
+.badge-slate   { @apply bg-slate-100 text-slate-500; }
+
+/* ── Overlay / Backdrop ────────────────────────────── */
+.overlay {
+  @apply fixed inset-0 bg-black/40 backdrop-blur-sm z-40;
+}
+
+/* ── Icon Button (small) ──────────────────────────── */
+.icon-btn {
+  @apply p-1.5 rounded-lg hover:bg-slate-100 transition-colors;
+}
+.icon-btn-danger {
+  @apply p-1.5 rounded-lg hover:bg-red-50 transition-colors;
+}

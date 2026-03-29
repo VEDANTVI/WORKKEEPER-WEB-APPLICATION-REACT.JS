@@ -1,0 +1,15 @@
+/* ═══════════════════════════════════════════════════════
+   MASTER STYLESHEET — WorkKeeper Design System
+   
+   Architecture:
+   1. Tailwind (includes preflight reset + all utilities)
+   2. Base     (tokens, typography, scrollbar)
+   3. Components (card, table, form, badge reusable classes)
+   4. Utilities  (animations, stagger)
+   ═══════════════════════════════════════════════════════ */
+
+@import "tailwindcss";
+
+@import "./base.css";
+@import "./components.css";
+@import "./utilities.css";

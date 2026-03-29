@@ -1,0 +1,12 @@
+/* ═══════════════════════════════════════════════════════
+   DEPRECATED — This file is no longer the CSS entry point.
+   
+   The design system has been restructured into:
+     src/styles/index.css      ← master import
+     src/styles/base.css       ← tokens, typography, scrollbar
+     src/styles/components.css ← reusable .card, .form-input, etc.
+     src/styles/utilities.css  ← animations, stagger
+   
+   The app imports from  src/styles/index.css  (via App.jsx).
+   This file is kept only as a reference. It can be safely deleted.
+   ═══════════════════════════════════════════════════════ */
